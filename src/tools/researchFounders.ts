@@ -2,19 +2,6 @@ import { z } from "zod";
 import { makeWordwareRequest } from "../utils/api.js";
 import { RESEARCH_FOUNDER_APP_ID } from "../utils/env.js";
 
-// // Format alert data
-// function formatAlert(feature: AlertFeature): string {
-//   const props = feature.properties;
-//   return [
-//     `Event: ${props.event || "Unknown"}`,
-//     `Area: ${props.areaDesc || "Unknown"}`,
-//     `Severity: ${props.severity || "Unknown"}`,
-//     `Status: ${props.status || "Unknown"}`,
-//     `Headline: ${props.headline || "No headline"}`,
-//     "---",
-//   ].join("\n");
-// }
-
 export const getResearchFoundersHandler = async ({
   fullName,
   company,
@@ -53,45 +40,6 @@ export const getResearchFoundersHandler = async ({
       },
     ],
   };
-
-  // ADD ERROR HANDLING LATER !
-
-  // if (!researchFoundersData) {
-  //   return {
-  //     content: [
-  //       {
-  //         type: "text" as const,
-  //         text: "Failed to retrieve alerts data",
-  //       },
-  //     ],
-  //   };
-  // }
-
-  // const features = alertsData.features || [];
-  // if (features.length === 0) {
-  //   return {
-  //     content: [
-  //       {
-  //         type: "text" as const,
-  //         text: `No active alerts for ${stateCode}`,
-  //       },
-  //     ],
-  //   };
-  // }
-
-  // const formattedAlerts = features.map(formatAlert);
-  // const alertsText = `Active alerts for ${stateCode}:\n\n${formattedAlerts.join(
-  //   "\n"
-  // )}`;
-
-  // return {
-  //   content: [
-  //     {
-  //       type: "text" as const,
-  //       text: alertsText,
-  //     },
-  //   ],
-  // };
 };
 
 export const getResearchFoundersSchema = {

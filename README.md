@@ -77,3 +77,4 @@ Currently, the tools are hardcoded in the server implementation. Future improvem
 - Add capability to fetch user's deployments automatically
 - Figure out which deployments can be added as MCP tools automatically
 - Better support for complex blocks (e.g. "ask a Human" blocks)
+- Better error handling for tool calls
