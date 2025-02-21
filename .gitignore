@@ -1,0 +1,10 @@
+# Environment variables
+src/utils/env.ts
+
+# Node modules
+node_modules
+
+# Build files
+build
+
+
