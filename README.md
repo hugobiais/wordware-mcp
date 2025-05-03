@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/yuhuangou-wordware-mcp-badge.png)](https://mseep.ai/app/yuhuangou-wordware-mcp)
+
 # wordware-mcp
 
 The Wordware MCP (Model Context Protocol) server allows you to run your Wordware apps locally. This enables you to integrate Wordware's powerful AI flows directly into your local development environment, making it easier to test and develop applications that leverage Wordware's capabilities.
